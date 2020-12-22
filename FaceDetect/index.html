@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pix 2 Pix</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <style media="screen">
+
+      button {
+        background: #3f51b5;
+        padding: 1rem;
+        color: white;
+        border: none;
+        margin: 1rem;
+        font-size: 1.5rem;
+        border-radius: 0.5rem;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <h1>Face Detection and Landmark Tracking</h1>
+
+    <button type="button" name="button" onclick="toggel('face')">Detect Faces</button>
+    <button type="button" name="button" onclick="toggel('feature')">Mark Features</button>
+
+    <h2 id="status">Status = Loading Model</h2>
+
+    <h2 id="total"></h2>
+    <script src="./app.js" charset="utf-8"></script>
+  </body>
+</html>
